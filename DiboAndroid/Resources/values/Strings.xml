@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="hello">Hello World, Click Me!</string>
+  <string name="app_name">DiboAndroid</string>
+  <string name="add_location">+ Point</string>
+  <!--login page-->
+  <string name ="username">用户名</string>
+  <string name ="password">密码</string>
+  <string name ="phone">手机号</string>
+  <string name ="hint_user">请输入用户名</string>
+  <string name ="hint_pwd">请输入密码</string>
+  <string name ="hint_phone">请输入手机号</string>
+  
+</resources>
