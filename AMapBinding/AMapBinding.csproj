@@ -43,6 +43,7 @@
   <ItemGroup>
     <None Include="Jars\AboutJars.txt" />
     <None Include="Additions\AboutAdditions.txt" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <TransformFile Include="Transforms\Metadata.xml" />
@@ -51,6 +52,9 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedJar Include="Jars\AMap2DMap_5.2.0_AMapLocation_3.8.0_20180201.jar" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ReleaseNotes.css" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
