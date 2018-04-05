@@ -44,29 +44,56 @@ namespace DiboAndroid
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f050000
-			public const int mapView = 2131034112;
-			
-			// aapt resource value: 0x7f050001
-			public const int myButton = 2131034113;
-			
 			// aapt resource value: 0x7f050007
-			public const int password = 2131034119;
+			public const int btnLogin = 2131034119;
 			
-			// aapt resource value: 0x7f050004
-			public const int phone = 2131034116;
+			// aapt resource value: 0x7f05000c
+			public const int gridLayout1 = 2131034124;
 			
-			// aapt resource value: 0x7f050002
-			public const int tableRow1 = 2131034114;
+			// aapt resource value: 0x7f050000
+			public const int imageView1 = 2131034112;
 			
-			// aapt resource value: 0x7f050005
-			public const int tableRow2 = 2131034117;
+			// aapt resource value: 0x7f05000a
+			public const int mapView = 2131034122;
 			
-			// aapt resource value: 0x7f050003
-			public const int textView1 = 2131034115;
+			// aapt resource value: 0x7f05000b
+			public const int myButton = 2131034123;
 			
 			// aapt resource value: 0x7f050006
-			public const int textView5 = 2131034118;
+			public const int password = 2131034118;
+			
+			// aapt resource value: 0x7f050003
+			public const int phone = 2131034115;
+			
+			// aapt resource value: 0x7f05000d
+			public const int projectlogo = 2131034125;
+			
+			// aapt resource value: 0x7f05000e
+			public const int projectname = 2131034126;
+			
+			// aapt resource value: 0x7f050010
+			public const int projectstatus = 2131034128;
+			
+			// aapt resource value: 0x7f05000f
+			public const int projectupdate = 2131034127;
+			
+			// aapt resource value: 0x7f050001
+			public const int tableRow1 = 2131034113;
+			
+			// aapt resource value: 0x7f050004
+			public const int tableRow2 = 2131034116;
+			
+			// aapt resource value: 0x7f050002
+			public const int textView1 = 2131034114;
+			
+			// aapt resource value: 0x7f050005
+			public const int textView5 = 2131034117;
+			
+			// aapt resource value: 0x7f050008
+			public const int tvForgetPassword = 2131034120;
+			
+			// aapt resource value: 0x7f050009
+			public const int tvNewUser = 2131034121;
 			
 			static Id()
 			{
@@ -82,10 +109,16 @@ namespace DiboAndroid
 		{
 			
 			// aapt resource value: 0x7f030000
-			public const int Main = 2130903040;
+			public const int lgoin = 2130903040;
 			
 			// aapt resource value: 0x7f030001
-			public const int PointProperty = 2130903041;
+			public const int Main = 2130903041;
+			
+			// aapt resource value: 0x7f030002
+			public const int ProjectBord = 2130903042;
+			
+			// aapt resource value: 0x7f030003
+			public const int projectItem = 2130903043;
 			
 			static Layout()
 			{
@@ -101,7 +134,10 @@ namespace DiboAndroid
 		{
 			
 			// aapt resource value: 0x7f020000
-			public const int Icon = 2130837504;
+			public const int ic_launcher = 2130837504;
+			
+			// aapt resource value: 0x7f020001
+			public const int Icon = 2130837505;
 			
 			static Mipmap()
 			{
@@ -122,6 +158,9 @@ namespace DiboAndroid
 			// aapt resource value: 0x7f040001
 			public const int app_name = 2130968577;
 			
+			// aapt resource value: 0x7f04000a
+			public const int forgetpwd = 2130968586;
+			
 			// aapt resource value: 0x7f040000
 			public const int hello = 2130968576;
 			
@@ -133,6 +172,12 @@ namespace DiboAndroid
 			
 			// aapt resource value: 0x7f040006
 			public const int hint_user = 2130968582;
+			
+			// aapt resource value: 0x7f040009
+			public const int login = 2130968585;
+			
+			// aapt resource value: 0x7f04000b
+			public const int newuser = 2130968587;
 			
 			// aapt resource value: 0x7f040004
 			public const int password = 2130968580;
