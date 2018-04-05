@@ -47,6 +47,21 @@ namespace DiboAndroid
 			// aapt resource value: 0x7f050007
 			public const int btnLogin = 2131034119;
 			
+			// aapt resource value: 0x7f05000d
+			public const int button1 = 2131034125;
+			
+			// aapt resource value: 0x7f05000e
+			public const int button2 = 2131034126;
+			
+			// aapt resource value: 0x7f05000f
+			public const int button3 = 2131034127;
+			
+			// aapt resource value: 0x7f050010
+			public const int button4 = 2131034128;
+			
+			// aapt resource value: 0x7f050011
+			public const int button5 = 2131034129;
+			
 			// aapt resource value: 0x7f05000c
 			public const int gridLayout1 = 2131034124;
 			
@@ -65,17 +80,17 @@ namespace DiboAndroid
 			// aapt resource value: 0x7f050003
 			public const int phone = 2131034115;
 			
-			// aapt resource value: 0x7f05000d
-			public const int projectlogo = 2131034125;
+			// aapt resource value: 0x7f050012
+			public const int projectlogo = 2131034130;
 			
-			// aapt resource value: 0x7f05000e
-			public const int projectname = 2131034126;
+			// aapt resource value: 0x7f050013
+			public const int projectname = 2131034131;
 			
-			// aapt resource value: 0x7f050010
-			public const int projectstatus = 2131034128;
+			// aapt resource value: 0x7f050015
+			public const int projectstatus = 2131034133;
 			
-			// aapt resource value: 0x7f05000f
-			public const int projectupdate = 2131034127;
+			// aapt resource value: 0x7f050014
+			public const int projectupdate = 2131034132;
 			
 			// aapt resource value: 0x7f050001
 			public const int tableRow1 = 2131034113;

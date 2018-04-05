@@ -1,16 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GridLayout xmlns:p1="http://schemas.android.com/apk/res/android"
-    p1:minWidth="25px"
-    p1:minHeight="25px"
     p1:layout_width="match_parent"
     p1:layout_height="match_parent"
-            p1:rowCount="6"
-            p1:columnCount="4"
-    p1:id="@+id/gridLayout1" >
-  <TextView
-    p1:layout_width="match_parent"
-    p1:layout_height="wrap_content"
-    p1:layout_columnSpan="4"
-    />
-  
+    p1:id="@+id/gridLayout1"
+    p1:columnCount="4"
+    p1:padding="5dp">
+    <TextView
+        p1:text="项目信息"
+        p1:id="@+id/textView1"
+        p1:layout_columnSpan="4"
+        p1:layout_rowSpan="2"
+        p1:layout_height="150dp"
+        p1:layout_width="match_parent"
+        p1:background="@android:color/background_light"
+        p1:textColor="@android:color/black" />
+    <Button
+        p1:text="点表"
+        p1:id="@+id/button1"
+        p1:layout_height="100dp"
+        p1:layout_columnWeight="1" />
+    <Button
+        p1:text="线表"
+        p1:id="@+id/button2"
+        p1:layout_height="100dp"
+        p1:layout_columnWeight="1" />
+    <Button
+        p1:text="文档"
+        p1:id="@+id/button3"
+        p1:layout_height="100dp"
+        p1:layout_columnWeight="1" />
+    <Button
+        p1:text="人员"
+        p1:id="@+id/button4"
+        p1:layout_height="100dp"
+        p1:layout_columnWeight="1" />
+    <Button
+        p1:text="数据采集"
+        p1:id="@+id/button5"
+        p1:layout_width="match_parent"
+        p1:layout_columnSpan="4"
+        p1:layout_gravity="bottom"
+        p1:layout_height="60dp"
+        p1:background="@android:color/holo_blue_dark"
+        p1:textSize="30dp" />
 </GridLayout>
