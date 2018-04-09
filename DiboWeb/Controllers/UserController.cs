@@ -45,6 +45,17 @@ namespace DiboWeb.Controllers
                 return NotFound();;
             }
         }
+
+        [HttpPost("login")]
+        public IActionResult Login([FromBody] User user)
+        {
+            if (user == null) return BadRequest();
+            User result=UserService.Login(user.Name, user.PassWord);
+
+            if (result == null) return BadRequest();
+
+            return new ObjectResult(result);
+        }
         // GET: api/User/5
         [HttpGet("{id}/createdprojects")]
         public IActionResult GetCreatedProject(int id)

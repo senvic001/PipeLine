@@ -11,8 +11,6 @@
         android:id="@+id/imageView1"
         android:layout_gravity="left" />
     <TableRow
-        android:minWidth="50px"
-        android:minHeight="50px"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/tableRow1">
@@ -23,11 +21,9 @@
         <EditText
             android:inputType="phone"
             android:hint="@string/hint_phone"
-            android:id="@+id/phone" />
+            android:id="@+id/login_phone" />
     </TableRow>
     <TableRow
-        android:minWidth="50px"
-        android:minHeight="50px"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/tableRow2"
@@ -39,7 +35,7 @@
         <EditText
             android:inputType="textPassword"
             android:hint="@string/hint_pwd"
-            android:id="@+id/password" />
+            android:id="@+id/login_password" />
     </TableRow>
     <Button
         android:minHeight="@android:dimen/app_icon_size"

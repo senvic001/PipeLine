@@ -8,7 +8,7 @@ using Output = System.Diagnostics.Debug;
 
 namespace DiboAndroid
 {
-    [Activity(Label = "DiboAndroid", MainLauncher = true, Icon = "@mipmap/icon")]
+    [Activity(Label = "MainMap",Icon = "@mipmap/ic_launcher")]
     public class MainActivity : Activity
     {
         int count = 1;

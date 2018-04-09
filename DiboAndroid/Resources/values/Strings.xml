@@ -3,7 +3,7 @@
   <string name="hello">Hello World, Click Me!</string>
   <string name="app_name">DiboAndroid</string>
   <string name="add_location">+ Point</string>
-  <!--login page-->
+  <!--login and register page-->
   <string name ="username">用户名</string>
   <string name ="password">密码</string>
   <string name ="phone">手机号</string>
@@ -13,5 +13,8 @@
   <string name ="login">登录</string>
   <string name ="forgetpwd">忘记密码?</string>
   <string name ="newuser">新用户注册</string>
-  
+
+  <string name ="register">注册</string>
+  <string name ="verification">验证码</string>
+  <string name ="get_verification">获取验证码</string>
 </resources>
