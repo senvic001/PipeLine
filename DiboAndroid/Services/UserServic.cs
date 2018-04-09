@@ -46,9 +46,19 @@ namespace DiboAndroid.Services
         {
             return false;
         }
-        public bool Register(User user)
+        public User Register()
         {
-            return false;
+            var client = new RestClient(baseUrl);
+            var quest = new RestRequest(Method.POST);
+            quest.Resource = "user/register";
+            quest.AddJsonBody(_user);
+            var result = client.Execute<User>(quest);
+            if (result.ResponseStatus == ResponseStatus.Completed)
+            {
+
+                return result.Data;
+            }
+            return null;
         }
 
         public bool CreateProject(ref Project project)

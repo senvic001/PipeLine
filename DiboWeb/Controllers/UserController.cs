@@ -104,13 +104,13 @@ namespace DiboWeb.Controllers
         }
 
         // POST: api/User
-        [HttpPost]
+        [HttpPost("register")]
         public IActionResult CreateUser([FromBody] User user)
         {
             if (user == null) return BadRequest();
             if (!UserService.Register(ref user)) return BadRequest();
 
-            return CreatedAtRoute("Get", new { id = user.Id }, user);
+            return new ObjectResult(user);
         }
 
         [HttpPost("{id}/project")]

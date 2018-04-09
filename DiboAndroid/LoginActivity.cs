@@ -45,7 +45,7 @@ namespace DiboAndroid
                 return;
             }
             User user = new User() { Name = phone.Text, PassWord = password.Text };
-            UserService userService = new UserService(user, "localhost:51523");
+            UserService userService = new UserService(user, GetString(Resource.String.host));
             var u = userService.Login();
             if (u !=null)
             {

@@ -11,6 +11,7 @@ namespace DiboWeb.Models
 
         public string Name { get; set; }
         public string PassWord { get; set; }
+        public string Phone { get; set; }
 
         //用户创建的项目
         public List<Project> CreatedProjects { get; set; }
