@@ -44,14 +44,14 @@ namespace DiboAndroid
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f05001d
-			public const int bt_verify = 2131034141;
+			// aapt resource value: 0x7f05001f
+			public const int bt_verify = 2131034143;
 			
 			// aapt resource value: 0x7f050008
 			public const int btnLogin = 2131034120;
 			
-			// aapt resource value: 0x7f050022
-			public const int btnRegister = 2131034146;
+			// aapt resource value: 0x7f050024
+			public const int btnRegister = 2131034148;
 			
 			// aapt resource value: 0x7f05000e
 			public const int button1 = 2131034126;
@@ -68,6 +68,9 @@ namespace DiboAndroid
 			// aapt resource value: 0x7f050012
 			public const int button5 = 2131034130;
 			
+			// aapt resource value: 0x7f050017
+			public const int button_addproject = 2131034135;
+			
 			// aapt resource value: 0x7f050002
 			public const int editText1 = 2131034114;
 			
@@ -76,6 +79,9 @@ namespace DiboAndroid
 			
 			// aapt resource value: 0x7f050003
 			public const int imageView1 = 2131034115;
+			
+			// aapt resource value: 0x7f050018
+			public const int listView_project = 2131034136;
 			
 			// aapt resource value: 0x7f050007
 			public const int login_password = 2131034119;
@@ -101,32 +107,32 @@ namespace DiboAndroid
 			// aapt resource value: 0x7f050015
 			public const int projectupdate = 2131034133;
 			
-			// aapt resource value: 0x7f050017
-			public const int rg_linearLayout = 2131034135;
-			
-			// aapt resource value: 0x7f050020
-			public const int rg_password = 2131034144;
-			
-			// aapt resource value: 0x7f05001a
-			public const int rg_phone = 2131034138;
-			
-			// aapt resource value: 0x7f050018
-			public const int rg_tableRow1 = 2131034136;
-			
-			// aapt resource value: 0x7f05001e
-			public const int rg_tableRow2 = 2131034142;
-			
 			// aapt resource value: 0x7f050019
-			public const int rg_textView1 = 2131034137;
+			public const int rg_linearLayout = 2131034137;
 			
-			// aapt resource value: 0x7f05001f
-			public const int rg_textView5 = 2131034143;
-			
-			// aapt resource value: 0x7f050021
-			public const int rg_user = 2131034145;
+			// aapt resource value: 0x7f050022
+			public const int rg_password = 2131034146;
 			
 			// aapt resource value: 0x7f05001c
-			public const int rg_verify = 2131034140;
+			public const int rg_phone = 2131034140;
+			
+			// aapt resource value: 0x7f05001a
+			public const int rg_tableRow1 = 2131034138;
+			
+			// aapt resource value: 0x7f050020
+			public const int rg_tableRow2 = 2131034144;
+			
+			// aapt resource value: 0x7f05001b
+			public const int rg_textView1 = 2131034139;
+			
+			// aapt resource value: 0x7f050021
+			public const int rg_textView5 = 2131034145;
+			
+			// aapt resource value: 0x7f050023
+			public const int rg_user = 2131034147;
+			
+			// aapt resource value: 0x7f05001e
+			public const int rg_verify = 2131034142;
 			
 			// aapt resource value: 0x7f050000
 			public const int tableRow1 = 2131034112;
@@ -137,8 +143,8 @@ namespace DiboAndroid
 			// aapt resource value: 0x7f050001
 			public const int textView1 = 2131034113;
 			
-			// aapt resource value: 0x7f05001b
-			public const int textView2 = 2131034139;
+			// aapt resource value: 0x7f05001d
+			public const int textView2 = 2131034141;
 			
 			// aapt resource value: 0x7f050006
 			public const int textView5 = 2131034118;
@@ -178,7 +184,10 @@ namespace DiboAndroid
 			public const int projectItem = 2130903044;
 			
 			// aapt resource value: 0x7f030005
-			public const int Register = 2130903045;
+			public const int ProjectList = 2130903045;
+			
+			// aapt resource value: 0x7f030006
+			public const int Register = 2130903046;
 			
 			static Layout()
 			{
@@ -211,6 +220,9 @@ namespace DiboAndroid
 		
 		public partial class String
 		{
+			
+			// aapt resource value: 0x7f040010
+			public const int add_item = 2130968592;
 			
 			// aapt resource value: 0x7f040002
 			public const int add_location = 2130968578;

@@ -17,9 +17,11 @@ namespace DiboWeb.Models
 
         public double Z { get; set; }
 
-        public DateTime DateTime { get; set; }
-
         public Project Project { get; set; }
         public int ProjectId { get; set; }
+
+        public GeometryStatus PointStatus { get; set; }
+        public DateTime CreateTime { get; set; }
+        public int UserId { get; set; }
     }
 }

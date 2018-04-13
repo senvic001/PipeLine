@@ -59,7 +59,7 @@ namespace DiboAndroid
             if (u != null)
             {
                 Toast.MakeText(this.ApplicationContext, $"注册成功:欢迎新用户{user.Text}！\n自动登陆中...", ToastLength.Short).Show();
-               // Intent intent = new Intent()
+               // Intent intent = new Intent();
             }
             else
             {

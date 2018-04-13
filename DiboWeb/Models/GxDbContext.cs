@@ -43,6 +43,9 @@ namespace DiboWeb.Models
                 .WithMany()
                 .HasForeignKey(u => u.PropertyTemplateId)
                 .OnDelete(DeleteBehavior.Restrict);//删除项目时,不删除属性模版
+
+                p.Property(b => b.CreatedTime).ValueGeneratedOnAdd();
+                p.Property(b => b.UpdateTime).ValueGeneratedOnAddOrUpdate();
             });
 
             modelBuilder.Entity<GxPoint>(entity => 
@@ -63,6 +66,8 @@ namespace DiboWeb.Models
                 .HasForeignKey(p => p.ProjectId);
 
                 entity.Ignore(p => p.GxProperties);
+
+                entity.Property(b => b.CreateTime).ValueGeneratedOnAdd();
             });
 
             modelBuilder.Entity<GxLine>(entity =>
@@ -73,6 +78,7 @@ namespace DiboWeb.Models
                 .HasForeignKey(p => p.ProjectId);
 
                 entity.Ignore(p => p.GxProperties);
+                entity.Property(b => b.CreateTime).ValueGeneratedOnAdd();
             });
 
             modelBuilder.Entity<GxProperty>().ToTable("Property");
@@ -89,9 +95,18 @@ namespace DiboWeb.Models
                 .HasForeignKey(p => p.ProjectId);
 
                 gp.Property(p => p.Id).ValueGeneratedNever();
+
+                gp.Property(b => b.CreateTime).ValueGeneratedOnAdd();
             });
 
-            modelBuilder.Entity<User>().ToTable("User");
+            modelBuilder.Entity<User>(entity =>
+            {
+                entity.ToTable("User");
+                entity.Property(b => b.RegisterTime).ValueGeneratedOnAdd();
+                entity.Property(b => b.RegisterIp).ValueGeneratedOnAddOrUpdate();
+                entity.Property(b => b.LoginTime).ValueGeneratedOnAddOrUpdate();
+                entity.Property(b => b.LoginIp).ValueGeneratedOnAddOrUpdate();
+            });
 
             //many-to-many Project -- User
             modelBuilder.Entity<UserProject>(up => 

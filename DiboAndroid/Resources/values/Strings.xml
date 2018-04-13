@@ -23,4 +23,7 @@
   
   
   <!--错误提示-->
+  
+  <!--项目列表-->
+  <string name ="add_item">+ 新建项目</string>
 </resources>

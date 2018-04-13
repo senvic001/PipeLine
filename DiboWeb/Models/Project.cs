@@ -14,6 +14,18 @@ namespace DiboWeb.Models
         public User Creator { get; set; }
         public int CreatorId { get; set; }
 
+        //项目属性
+        public string Company { get; set; }
+        public DateTime CreatedTime { get; set; }
+        public DateTime LoginTime { get; set; }
+        public DateTime UpdateTime {get;set;}
+        public int PointNumbers { get; set; }
+        public double LineLength { get; set; }
+
+        //头像
+        public int AvatarId { get; set; }
+        public Avatar Avatar { get; set; }
+
         public List<GxProperty> GxProperties { get; set; }
 
         public List<GxPoint> GxPoints { get; set; }

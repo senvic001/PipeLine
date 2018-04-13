@@ -19,6 +19,11 @@ namespace DiboWeb.Models
 
         public double EndDeep { get; set; }
 
+        //
+        public GeometryStatus PointStatus { get; set; }
+        public DateTime CreateTime { get; set; }
+        public int UserId { get; set; }
+
         //属性在数据库中存为string,对象中转为Dictionary
         public Dictionary<GxProperty, string> GxProperties { get; set; }
         public string PropertiyString { get; set; }

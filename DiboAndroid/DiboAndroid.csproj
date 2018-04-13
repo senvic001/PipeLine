@@ -93,6 +93,7 @@
     <Compile Include="Models\User.cs" />
     <Compile Include="Models\UserProject.cs" />
     <Compile Include="PipeApplication.cs" />
+    <Compile Include="ProjectListActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\UserServic.cs" />
@@ -119,6 +120,9 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\CreateProject.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\ProjectList.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

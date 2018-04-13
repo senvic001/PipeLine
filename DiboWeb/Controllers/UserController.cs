@@ -109,6 +109,7 @@ namespace DiboWeb.Controllers
         {
             if (user == null) return BadRequest();
             if (!UserService.Register(ref user)) return BadRequest();
+            
 
             return new ObjectResult(user);
         }
