@@ -1,10 +1,4 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.Extensions.Configuration;
-using Microsoft.EntityFrameworkCore.Design;
 
 namespace DiboWeb.Models
 {
@@ -44,8 +38,8 @@ namespace DiboWeb.Models
                 .HasForeignKey(u => u.PropertyTemplateId)
                 .OnDelete(DeleteBehavior.Restrict);//删除项目时,不删除属性模版
 
-                p.Property(b => b.CreatedTime).ValueGeneratedOnAdd();
-                p.Property(b => b.UpdateTime).ValueGeneratedOnAddOrUpdate();
+                p.Property(b => b.CreatedTime).ValueGeneratedOnAdd().HasColumnType("TIMESTAMP");
+                p.Property(b => b.UpdateTime).ValueGeneratedOnAddOrUpdate().HasColumnType("TIMESTAMP");
             });
 
             modelBuilder.Entity<GxPoint>(entity => 
@@ -67,7 +61,7 @@ namespace DiboWeb.Models
 
                 entity.Ignore(p => p.GxProperties);
 
-                entity.Property(b => b.CreateTime).ValueGeneratedOnAdd();
+                entity.Property(b => b.CreateTime).ValueGeneratedOnAdd().HasColumnType("TIMESTAMP");
             });
 
             modelBuilder.Entity<GxLine>(entity =>
@@ -78,7 +72,7 @@ namespace DiboWeb.Models
                 .HasForeignKey(p => p.ProjectId);
 
                 entity.Ignore(p => p.GxProperties);
-                entity.Property(b => b.CreateTime).ValueGeneratedOnAdd();
+                entity.Property(b => b.CreateTime).ValueGeneratedOnAdd().HasColumnType("TIMESTAMP");
             });
 
             modelBuilder.Entity<GxProperty>().ToTable("Property");
@@ -96,15 +90,15 @@ namespace DiboWeb.Models
 
                 gp.Property(p => p.Id).ValueGeneratedNever();
 
-                gp.Property(b => b.CreateTime).ValueGeneratedOnAdd();
+                gp.Property(b => b.CreateTime).ValueGeneratedOnAdd().HasColumnType("TIMESTAMP");
             });
 
             modelBuilder.Entity<User>(entity =>
             {
                 entity.ToTable("User");
-                entity.Property(b => b.RegisterTime).ValueGeneratedOnAdd();
+                entity.Property(b => b.RegisterTime).ValueGeneratedOnAdd().HasColumnType("TIMESTAMP");
                 entity.Property(b => b.RegisterIp).ValueGeneratedOnAddOrUpdate();
-                entity.Property(b => b.LoginTime).ValueGeneratedOnAddOrUpdate();
+                entity.Property(b => b.LoginTime).ValueGeneratedOnAddOrUpdate().HasColumnType("TIMESTAMP");
                 entity.Property(b => b.LoginIp).ValueGeneratedOnAddOrUpdate();
             });
 
@@ -144,13 +138,14 @@ namespace DiboWeb.Models
         }
     }
 
-    public class GxContextFactory : IDesignTimeDbContextFactory<GxDbContext>
-    {
-        public GxDbContext CreateDbContext(string[] args)
-        {
-            var optionsBuilder = new DbContextOptionsBuilder<GxDbContext>();
-            optionsBuilder.UseMySQL("server=localhost;port=3306;database=gxdb;user=root;password=123;SSLMode=none");
-            return new GxDbContext(optionsBuilder.Options);
-        }
-    }
+    //public class GxContextFactory : IDesignTimeDbContextFactory<GxDbContext>
+    //{
+    //    public GxDbContext CreateDbContext(string[] args)
+    //    {
+    //        var optionsBuilder = new DbContextOptionsBuilder<GxDbContext>();
+    //        optionsBuilder.UseMySQL("server=localhost;port=3306;database=gxdb;user=root;password=123;SSLMode=none");
+
+    //        return new GxDbContext(optionsBuilder.Options);
+    //    }
+    //}
 }

@@ -31,7 +31,7 @@ namespace DiboAndroid
             // Create your application here
             phone = FindViewById<EditText>(Resource.Id.rg_phone);
             valid = FindViewById<EditText>(Resource.Id.rg_verify);
-            user = FindViewById<EditText>(Resource.Id.rg_user);
+          // user = FindViewById<EditText>(Resource.Id.rg_user);
             pwd = FindViewById<EditText>(Resource.Id.rg_password);
             bt_register = FindViewById<Button>(Resource.Id.btnRegister);
             bt_verify = FindViewById<Button>(Resource.Id.rg_verify);

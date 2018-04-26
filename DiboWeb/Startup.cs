@@ -4,6 +4,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using DiboWeb.Models;
 using Microsoft.EntityFrameworkCore;
+using Pomelo.EntityFrameworkCore;
 
 namespace DiboWeb
 {
@@ -20,7 +21,9 @@ namespace DiboWeb
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<GxDbContext>(Options =>
-            Options.UseMySQL(Configuration.GetConnectionString("MySqlConnection")));
+              Options.UseMySql(Configuration.GetConnectionString("AzureMySqlConnection")));
+           // Options.UseSqlServer(Configuration.GetConnectionString("AzureDbConnection")));
+            //Options.UseMySQL(Configuration.GetConnectionString("AzureDbConnection")));//
 
             services.AddMvc()
                 .AddJsonOptions(options => options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);

@@ -42,7 +42,7 @@ namespace DiboAndroid
             btn.Click += Btn_Click;
             // Create your application here
             _user = (User)this.Intent.GetSerializableExtra("user");
-            SimpleAdapter simpleAdapter = new SimpleAdapter(this,)
+          //  SimpleAdapter simpleAdapter = new SimpleAdapter(this,)
          }
 
        

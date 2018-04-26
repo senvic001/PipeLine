@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+  <!--蓝色方案-->
+  <color name ="activity_backgroud">#FFF</color>
+  <color name ="et_backgroud">#FFF</color>
+  <color name ="et_border">#00675C</color>
+  <color name ="bt_main_background">#FF6C00</color>
+  <color name ="bt_main_text">#FFF</color>
+</resources>
